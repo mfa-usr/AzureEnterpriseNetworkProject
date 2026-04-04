@@ -1,0 +1,10 @@
+#cloud-config
+package_update: true
+package_upgrade: true
+packages:
+  - wget
+  - curl
+  - git
+  - htop
+runcmd:
+  - echo "Splunk base host ready" > /home/azureuser/splunk-ready.txt
